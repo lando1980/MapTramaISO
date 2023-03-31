@@ -1,0 +1,201 @@
+{
+  "02": {
+    "D1": { "name": "PRNT-FMRT", "length": 1 },
+    "D2": { "name": "PRNT-SIZ", "length": 3 }
+  },
+  "04": {
+    "D1": { "name": "ERR-FLG", "length": 1 },
+    "D2": { "name": "RTE-GRP", "length": 11 },
+    "D3": {
+      "name": "CRD-VRFY-FLG: M - Match  / N No Match /  Sin CVV2",
+      "length": 1
+    },
+    "D4": { "name": "CITY-EXT", "length": 5 },
+    "D5": { "name": "COMPLETE-TRACK2-DATA", "length": 1 },
+    "D6": { "name": "UAF-FLG", "length": 1 }
+  },
+  "06": {
+    "D1": { "name": "Formato Del PIN", "length": 1 },
+    "D2": { "name": "PIN offset para el nuevo PIN", "length": 16 },
+    "D3": { "name": "Numero de PINs presente", "length": 1 },
+    "D4": { "name": "Longitud del nuevo PIN", "length": 2 },
+    "D5": { "name": "Nuevo PIN-1", "length": 16 },
+    "D6": { "name": "Nuevo PIN-2 (Para comparar con el PIN-)", "length": 16 }
+  },
+  "B4": {
+    "D01": { "name": "(PT-SRV-ENTRY-MDE", "length": 3 },
+    "D02": { "name": "TERM-ENTRY-CAP", "length": 1 },
+    "D03": { "name": "LAST-EMV-STAT", "length": 1 },
+    "D04": { "name": "DATA-SUSPECT", "length": 1 },
+    "D05": { "name": "APPL-PAN-SEQ-NUM", "length": 2 },
+    "D06": { "name": "DEV-INFO", "length": 6 },
+    "D07": { "name": "RSN-ONL-CDE", "length": 4 },
+    "D08": { "name": "ARQ Verification (ARQC-VRFY)", "length": 1 },
+    "D09": { "name": "ISO REQ INDICATOR (ISO-RC-IND)", "length": 1 }
+  },
+  "P0": {
+    "D1": { "name": "Código de enrutamiento", "length": 3 },
+    "D2": { "name": "Código de Compañía", "length": 5 },
+    "D3": { "name": "Número de factura", "length": 20 },
+    "D4": { "name": "Nombre de Compañía ", "length": 20 },
+    "D5": { "name": "Número de Recibo", "length": 20 },
+    "D6": { "name": "Cédula Abonado", "length": 14 },
+    "D7": { "name": "Fecha de Emisión de Recibo", "length": 8 },
+    "D8": { "name": "Número de Autorización SRI", "length": 15 },
+    "D9": { "name": "Fecha de Expiración SRI", "length": 15 },
+    "D10": { "name": "Indicador de aceptación de pago parcial", "length": 1 },
+    "D11": { "name": "Filler", "length": 1 }
+  },
+  "P1": {
+    "D1": { "name": "Número de ocurrencias", "length": 2 },
+    "D2": { "name": "Flag, valores posible", "length": 1 },
+    "D3": { "name": "Tarjeta1", "length": 19 },
+    "D4": { "name": "Flag, valores posible", "length": 1 },
+    "D5": { "name": "Tarjeta2", "length": 19 },
+    "D6": { "name": "Flag, valores posible", "length": 1 },
+    "D7": { "name": "Tarjeta3", "length": 19 },
+    "D8": { "name": "Flag, valores posible", "length": 1 },
+    "D9": { "name": "Tarjeta4", "length": 19 },
+    "D10": { "name": "Flag, valores posible", "length": 1 },
+    "D11": { "name": "Tarjeta5", "length": 19 },
+    "D12": { "name": "Flag, valores posible", "length": 1 },
+    "D13": { "name": "Tarjeta6", "length": 19 },
+    "D14": { "name": "Flag, valores posible", "length": 1 },
+    "D15": { "name": "Tarjeta7", "length": 19 },
+    "D16": { "name": "Flag, valores posible", "length": 1 },
+    "D17": { "name": "Tarjeta8", "length": 19 }
+  },
+  "P2": {
+    "D1": { "name": "Cédula", "length": 14 },
+    "D2": { "name": "Periodo de Pago", "length": 16 },
+    "D3": { "name": "Tipo de Pago", "length": 14 },
+    "D4": { "name": "Mensaje de Texto", "length": 39 },
+    "D5": { "name": "Mensaje Adicional BDH", "length": 60 },
+    "D6": { "name": "Filler", "length": 1 }
+  },
+  "P3": {
+    "D1": { "name": "Código de Cobro de Transacción", "length": 4 },
+    "D2": { "name": "Valor de Cobro de Transacción", "length": 8 },
+    "D3": { "name": "Código de:  Comision / ISA", "length": 4 },
+    "D4": { "name": "Valor de: Comision / ISA", "length": 8 },
+    "D5": { "name": "Indicador de IVA", "length": 1 },
+    "D6": { "name": "Valor del IVA ", "length": 8 },
+    "D7": { "name": "Control de Procesamiento", "length": 2 },
+    "D8": { "name": "Aceptación  S=Si, N=No, X=Redes", "length": 1 },
+    "D9": { "name": "Código de ISD", "length": 4 },
+    "D10": { "name": "Valor de ISD ", "length": 8 }
+  },
+  "P5": {
+    "D1": { "name": "Indicador de Cupo diario", "length": 1 },
+    "D2": { "name": "Cupo Diario", "length": 15 },
+    "D3": { "name": "Indicador de Cupo semanal", "length": 1 },
+    "D4": { "name": "Cupo Semanal", "length": 15 },
+    "D5": { "name": "Indicador de Cupo Mensual", "length": 1 },
+    "D6": { "name": "Cupo Mensual", "length": 15 },
+    "D7": { "name": "Indicador de Saldo a Favor ", "length": 1 },
+    "D8": { "name": "Saldo a Favor", "length": 15 },
+    "D9": { "name": "Indicador Cupo Saldo a Favor", "length": 1 },
+    "D10": { "name": "Cupo Saldo a Favor", "length": 15 },
+    "D11": { "name": "Monto a Pagar", "length": 15 },
+    "D12": { "name": "Fecha de Pago (YYMMDD)", "length": 8 },
+    "D13": { "name": "Filler", "length": 1 }
+  },
+  "P6": {
+    "D1": {
+      "name": "Fecha de Posteo según Festivos y Fin De Semana",
+      "length": 6
+    }
+  },
+  "P7": {
+    "D1": { "name": "Identificación Cliente - LLAVE ARCHIVO", "length": 14 },
+    "D2": { "name": "Prioridad Promoción   -LLAVE ARCHIVO", "length": 3 },
+    "D3": { "name": "Tipo Promoción", "length": 1 },
+    "D4": { "name": "Estado", "length": 1 },
+    "D5": { "name": "Respuesta Cliente", "length": 1 },
+    "D61": { "name": "Aceptacion de  Cupo", "length": 1 },
+    "D62": { "name": "Indicador Ingreso de Moto Por el Cliente", "length": 1 },
+    "D63": { "name": "Indicador Ingreso de Plazo", "length": 1 },
+    "D64": { "name": "Indicador Ingreso Dia de Cobro", "length": 1 },
+    "D65": { "name": "Aceptacion de Condiciones", "length": 1 },
+    "D66": { "name": "Declaracion de Estado de Salud al Seguro", "length": 1 },
+    "D67": { "name": "Indicador de Validacion de Cedula", "length": 1 },
+    "D68": { "name": "Indicador de Validacion de Cedula", "length": 1 },
+    "D69": { "name": "Indicador de Desembolso del Prestamo", "length": 1 },
+    "D7": { "name": "Filler ", "length": 1 }
+  },
+  "P8": {
+    "D1": { "name": "PinBlock Valido", "length": 16 },
+    "D2": { "name": "NSeqTxSimulaciondeCredito", "length": 12 },
+    "D3": { "name": "NSeqTxSimulaciondeCredito", "length": 12 },
+    "D4": { "name": "TipoCuenta", "length": 2 },
+    "D5": { "name": "NúmeroCuenta", "length": 28 },
+    "D6": { "name": "CedulaIntentosRealizados", "length": 2 },
+    "D7": { "name": "CedulaMaximoIntentos", "length": 2 },
+    "D8": { "name": "PINIntentosRealizados", "length": 2 },
+    "D9": { "name": "PINMaximodeIntentos", "length": 2 }
+  },
+  "P9": {
+    "D1": { "name": "FIID", "length": 4},
+    "D2": { "name": "Tipo de Tarjeta", "length": 2 },
+    "D3": { "name": "Estado de la tarjeta", "length": 1 },
+    "D4": { "name": "Pin Offset", "length": 16 },
+    "D5": { "name": "Fecha de Emision", "length": 4 },
+    "D6": { "name": "Fecha de Expiracion", "length": 4 },
+    "D7": { "name": "Cedula del cliente", "length": 14 },
+    "D8": { "name": "Nombre del Cliente", "length": 30 },
+    "D9": { "name": "Numero de cuentas asociadas a la Tarjeta", "length": 2 },
+    "D10": { "name": "Tipo de Cuenta", "length": 2 },
+    "D11": { "name": "Numero de Cuenta", "length": 19 },
+    "D12": { "name": "Estado de la Cuenta", "length": 1 },
+    "D13": { "name": "Filler", "length": 1 }
+  },
+  "PB": {
+    "D1": { "name": "Tipo de Tarjeta", "length": 1 },
+    "D2": { "name": "FIID de emisor", "length": 4 },
+    "D3": { "name": "Franquicia", "length": 1 }
+  },
+  "PC": {
+    "D1": { "name": "Codigo de Error", "length": 2 },
+    "D2": { "name": "Descripcion del Error", "length": 32 }
+  },
+  "Q0": {
+    "D1": { "name": "Data", "length": 400 }
+  },
+  "Q1": {
+    "D1": { "name": "Data", "length": 400 }
+  },
+  "Q2": {
+    "D1": { "name": "Contrapartida", "length": 20 },
+    "D2": { "name": "Journal Bancs", "length": 10 }
+  },
+  "Q3": {
+    "D1": { "name": "Acquirer", "length": 3 },
+    "D2": { "name": "Issuer", "length": 10 },
+    "D3": { "name": "Original Transaction code ", "length": 3 }
+  },
+  "Q5": {
+    "D1": { "name": "Type", "length": 2 }
+  },
+  "Q6": {
+    "D1": { "name": "Channel", "length": 3 },
+    "D2": { "name": "CreditType", "length": 2 },
+    "D3": { "name": "TermNumber", "length": 3 },
+    "D4": { "name": "InterestAmount", "length": 12 }
+  },
+  "Q7": {
+    "D1": { "name": "AgencyID", "length": 4 },
+    "D2": { "name": "Channel", "length": 3 },
+    "D3": { "name": "Datos Adicionales Banco Emisor", "length": 19 },
+    "D4": { "name": "Datos Adicionales Valor1", "length": 19 },
+    "D5": { "name": "Datos Adicionales Valor2", "length": 19 },
+    "D6": { "name": "PrimaryAccountNumber", "length": 50 },
+    "D7": { "name": "Track2", "length": 82 },
+    "D8": { "name": "ClientAccount", "length": 50 },
+    "D9": { "name": "Cvv2", "length": 18 },
+    "D10": { "name": "RetriRefNumber", "length": 12 }
+  },
+  "Q8": {
+    "D1": { "name": "Bussines Date", "length": 6 },
+    "D2": { "name": "Codigo Cadena", "length": 4 }
+  }
+}
